@@ -6,18 +6,21 @@ This script requires the RDKit and Mordred packages to be installed. This is bes
 `conda install -c conda-forge rdkit mordred`
 
 ### Usage 
-invoke on a folder with `.mol` files to get rdkit descriptors in a CSV
-__minimum example:__ `python ./free_descriptors.py -i /path/to/molfiles -o output_name`
-will read all `.mol` files in `/path/to/` and create `output_name.csv` inside the same folder.
+Invoke on a folder with `.mol` files to get rdkit descriptors in a CSV
+__minimum example:__ 
+```
+python ./free_descriptors.py -i /path/to/molfiles -o output_name
+```
+will read all `.mol` files in `/path/to/molfiles` and create `output_name.csv` inside the same folder.
 
 ### Options
-several options exist to compute additional descriptors:
-- fragments optional with `-f` or `--fragments` flag
-- MACCS keys: -M or --MACCS flag
-- ECFP6 fingerprints: -E or --ECFP6 flag
-- Mordred descriptors: -m or --mordred flag
-- Macrocycle descriptors: -c or --macrocycle flag
-Optional descriptors have a tendency to take a long time to compute and to fail on some molecules
+Several options exist to compute additional descriptors:
+- __fragments:__ `-f` or `--fragments` flag
+- __MACCS keys:__ `-M` or `--MACCS` flag
+- __ECFP6 fingerprints:__ `-E` or `--ECFP6` flag
+- __Mordred descriptors:__ `-m` or `--mordred` flag
+- __Macrocycle descriptors:__ `-c` or `--macrocycle` flag
+Optional descriptors have a tendency to take a long time to compute and to fail on some molecules. Be sure to check output files. 
 
 ### Thanks and Acknowledgements 
 - This script is a modification of the rdkit_descriptors.py script by Petr Škoda 
