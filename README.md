@@ -21,4 +21,4 @@ Optional descriptors have a tendency to take a long time to compute and to fail 
 
 ### Thanks and Acknowledgements 
 - This script is a modification of the rdkit_descriptors.py script by Petr Škoda 
-- This script also includes code from Phyo Phyo Kyaw Zin (cite)[https://doi.org/10.1038/s41598-020-63192-4]
+- This script also includes code from Phyo Phyo Kyaw Zin [article](https://doi.org/10.1038/s41598-020-63192-4)
