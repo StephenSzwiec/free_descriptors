@@ -3,7 +3,7 @@ A python script for generating descriptors from a directory of .mol files
 
 ### Prerequisites 
 This script requires the RDKit and Mordred packages to be installed. This is best done with conda:
-`conda install -c conda-forge rdkit mordred`
+`conda install -c rdkit -c mordred_descriptors mordred rdkit`
 
 ### Usage 
 Invoke on a folder with `.mol` files to get rdkit descriptors in a CSV
